@@ -24,7 +24,7 @@ public class NetworkInterceptionTest extends BaseTest {
         );
         page.navigate(url);
         page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("404")).click();
-        assertTrue(page.textContent("body").contains(mockedBody), "Mocked message is not displayed!");
+        assertTrue(page.textContent("body").contains(mockedBody), "Mocked message isn't displayed!");
 
     }
 }
